@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Load User Images</title>
+  <style>
+    img {
+      max-width: 200px;
+      height: auto;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 align="center">Select Cat</h1>
+  <div id="imageContainer"></div>
+
+  <script>
+    const imageData = [
+      { "image": "https://placekitten.com/200/150?image=1" },
+      { "image": "https://placekitten.com/200/150?image=2" },
+      { "image": "https://placekitten.com/200/150?image=3" },
+      { "image": "https://placekitten.com/200/150?image=4" },
+      { "image": "https://placekitten.com/200/150?image=5" },
+      { "image": "https://placekitten.com/200/150?image=6" },
+      { "image": "https://placekitten.com/200/150?image=7" },
+      { "image": "https://placekitten.com/200/150?image=8" },
+      { "image": "https://placekitten.com/200/150?image=9" },
+      { "image": "https://placekitten.com/200/150?image=10" },
+      { "image": "https://placekitten.com/200/150?image=11" },
+      { "image": "https://placekitten.com/200/150?image=12" },
+      { "image": "https://placekitten.com/200/150?image=13" },
+      { "image": "https://placekitten.com/200/150?image=14" },
+      { "image": "https://placekitten.com/200/150?image=15" },
+      { "image": "https://placekitten.com/200/150?image=16" },
+      { "image": "https://placekitten.com/200/150?image=17" },
+      { "image": "https://placekitten.com/200/150?image=18" },
+      { "image": "https://placekitten.com/200/150?image=19" },
+      { "image": "https://placekitten.com/200/150?image=20" },
+      { "image": "https://placekitten.com/200/150?image=21" },
+      { "image": "https://placekitten.com/200/150?image=22" },
+      { "image": "https://placekitten.com/200/150?image=23" },
+      { "image": "https://placekitten.com/200/150?image=24" },
+      { "image": "https://placekitten.com/200/150?image=25" }
+    ];
+
+    const imageContainer = document.getElementById('imageContainer');
+
+    imageData.forEach(data => {
+      const img = document.createElement('img');
+      img.src = data.image;
+      imageContainer.appendChild(img);
+    });
+  </script>
+</body>
+</html>
